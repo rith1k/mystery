@@ -1,0 +1,1166 @@
+#initial {
+  background: url(../images/Mystery.gif) no-repeat center fixed;
+  background-size: contain;
+  background-position: center;
+
+  -webkit-background-clip: text;
+  color: transparent;
+  box-sizing: content-box;
+
+  font-size: 200px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100%;
+  animation: steps;
+  animation-duration: 4s;
+  animation-timing-function: steps(4);
+  animation-iteration-count: initial;
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0% {
+  }
+  50% {
+    letter-spacing: 25px;
+  }
+  85% {
+    letter-spacing: 8px;
+  }
+}
+
+#initial:hover {
+  background: url(../images/Mystery2.gif) no-repeat center fixed;
+  background-size: cover;
+  background-position: center;
+
+  -webkit-background-clip: text;
+  color: transparent;
+  box-sizing: content-box;
+  font-size: 200px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100%;
+}
+#backkk {
+  widows: 100%;
+}
+#myDIV {
+  animation: fadeInRight 3s;
+}
+.leady {
+  background-image: url(../images/background2.gif);
+  background-size: cover;
+}
+.darkTable {
+  animation: fadeInLeft 3s;
+  top: 40%;
+  position: absolute;
+  border: 10px auto;
+  margin: 0 auto 0 auto;
+  left: 20%;
+}
+table.darkTable tr:hover {
+  background-color: black;
+  color: white;
+}
+table.darkTable th:hover {
+  background-color: white;
+  color: black;
+}
+
+table.darkTable {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border: 5px solid #000000;
+  background-color: #4a4a4a;
+  width: 60%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.darkTable td,
+table.darkTable th {
+  border: 3px solid black;
+  padding: 3px 2px;
+}
+table.darkTable tbody td {
+  font-size: 20px;
+  backgroun-color: black;
+  color: #d8d8d8;
+}
+
+table.darkTable tr {
+  background-color: transparent;
+  color: black;
+}
+table.darkTable thead {
+  background: #000000;
+  border-bottom: 3px solid #000000;
+}
+table.darkTable thead th {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e6e6e6;
+  text-align: center;
+  border-left: 2px solid black;
+}
+table.darkTable thead th:first-child {
+  border-left: none;
+}
+
+table.darkTable tfoot td {
+  font-size: 12px;
+}
+.selected {
+  background-color: pink;
+  font-weight: bolder;
+  border-radius: 8px;
+}
+.navigation {
+  width: 100%;
+  height: 5%;
+  position: fixed;
+  overflow: hidden;
+  top: 0px;
+  left: 0;
+  z-index: 22;
+  font-size: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+  padding: 0 32px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation > #start {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  line-height: 42px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.navigation > #start:hover {
+  border-radius: 10px;
+  border-width: 40px;
+  border-right-width: 10px;
+  background-color: black;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+/* initial state */
+#skeleton {
+  padding-top: 190px;
+  position: relative;
+  bottom: 30%;
+  margin-bottom: 30%;
+  height: 400px;
+  color: #fff;
+  bottom: 50px;
+}
+div.move {
+  position: relative;
+  bottom: 10px;
+  left: 20px;
+  -webkit-transition: 3s ease-in;
+  -moz-transition: 3s ease-in;
+  -o-transition: 3s ease-in;
+  transition: 1s ease-out;
+}
+div.move div {
+  width: 92px;
+  height: 215px;
+  background: url(/../images/skeleton.gif) no-repeat;
+  -webkit-transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
+  transition: 3s ease-in;
+}
+
+/* hover final state */
+#skeleton:hover div.move {
+  -webkit-transform: translate(100%, -0%);
+  -moz-transform: translate(100%, -0%);
+  -o-transform: translate(100%, -0%);
+  -ms-transform: translate(100%, -0%);
+  transform: translate(550px, -200px);
+}
+#skeleton:hover div.move div {
+  -webkit-transform: rotate(70deg);
+  -moz-transform: rotate(70deg);
+  -o-transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  transform: rotate(70deg);
+}
+/* remove codrops styles and reset the whole thing */
+#container_demo {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Trebuchet MS", "Myriad Pro", Arial, sans-serif;
+}
+
+/** fonts used for the icons **/
+@font-face {
+  font-family: "FontomasCustomRegular";
+  src: url("fonts/fontomas-webfont.eot");
+  src: url("fonts/fontomas-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/fontomas-webfont.woff") format("woff"),
+    url("fonts/fontomas-webfont.ttf") format("truetype"),
+    url("fonts/fontomas-webfont.svg#FontomasCustomRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FranchiseRegular";
+  src: url("fonts/franchise-bold-webfont.eot");
+  src: url("fonts/franchise-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/franchise-bold-webfont.woff") format("woff"),
+    url("fonts/franchise-bold-webfont.ttf") format("truetype"),
+    url("fonts/franchise-bold-webfont.svg#FranchiseRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+a.hiddenanchor {
+  display: none;
+}
+/** The wrapper that will contain our two forms **/
+#wrapper {
+  width: 60%;
+  right: 0px;
+  min-height: 560px;
+  margin: 0px auto;
+  width: 500px;
+  position: relative;
+  color: black;
+  font-weight: bolder;
+}
+/**** Styling the form elements **/
+
+/**** general text styling ****/
+#wrapper a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+#wrapper h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  padding: 2px 0 10px 0;
+  font-family: "FranchiseRegular", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+/** For the moment only webkit supports the background-clip:text; */
+#wrapper h1 {
+}
+#wrapper h1:after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background: black;
+}
+
+#wrapper p {
+  margin-bottom: 15px;
+}
+#wrapper p:first-child {
+  margin: 0px;
+}
+#wrapper label {
+  color: black;
+  font-weight: bolder;
+  position: relative;
+}
+
+/**** advanced input styling ****/
+/* placeholder */
+::-webkit-input-placeholder {
+  color: rgb(190, 188, 188);
+  font-style: italic;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: rgb(190, 188, 188);
+
+  font-style: italic;
+}
+input {
+  outline: none;
+}
+
+.background {
+  height: 100vh;
+  width: 313vw;
+  background-image: url("https://res.cloudinary.com/dpzef0bdo/image/upload/v1571950117/3_game_background_fdang6.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  clear: both;
+}
+.loginpage {
+  background: url(../images/giphy1.gif) no-repeat;
+  width: 100%;
+  background-size: 100%;
+}
+
+/* all the input except submit and checkbox */
+#wrapper input:not([type="checkbox"]) {
+  width: 92%;
+  margin-top: 4px;
+  padding: 10px 5px 10px 32px;
+  border: 1px solid rgb(178, 178, 178);
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#wrapper input:not([type="checkbox"]):active,
+#wrapper input:not([type="checkbox"]):focus {
+  border: 1px solid rgba(91, 90, 90, 0.7);
+  background: white;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+  -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+}
+
+/** the magic icon trick ! **/
+[data-icon]:after {
+  content: attr(data-icon);
+  font-family: "FontomasCustomRegular";
+  color: black;
+  font-weight: bolder;
+  position: absolute;
+  left: 10px;
+  top: 35px;
+  width: 30px;
+}
+figure {
+  widows: 100%;
+  margin: 0;
+  padding: 350px 0 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  overflow: hidden;
+  animation: back_anim 75s linear infinite;
+}
+@keyframes animateBackground {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes back_anim {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2122px 0;
+  }
+}
+/*styling both submit buttons */
+#lgb {
+  align-content: center;
+  left: 0;
+}
+#wrapper p.button input {
+  cursor: pointer;
+  background: black;
+
+  font-family: "BebasNeueRegular", "Arial Narrow", Arial, sans-serif;
+  color: #fff;
+  font-size: 24px;
+  left: 0;
+  border: 1px solid rgb(28, 108, 122);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#wrapper p.button input:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+#wrapper p.button input:active,
+#wrapper p.button input:focus {
+  background: black;
+  position: relative;
+  top: 1px;
+  border: 1px solid rgb(12, 76, 87);
+  -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+p.login.button,
+p.signin.button {
+  text-align: right;
+  margin: 5px 0;
+}
+
+/* styling the checkbox "keep me logged in"*/
+.keeplogin {
+  margin-top: -5px;
+}
+.keeplogin input,
+.keeplogin label {
+  display: inline-block;
+  font-size: 12px;
+  font-style: italic;
+}
+.keeplogin input#loginkeeping {
+  margin-right: 5px;
+}
+.keeplogin label {
+  width: 80%;
+}
+
+/*styling the links to change from one form to another */
+
+p.change_link {
+  position: absolute;
+  color: white;
+  font-weight: bolder;
+  left: 0px;
+  height: 20px;
+  width: 440px;
+  padding: 17px 30px 20px 30px;
+  font-size: 16px;
+  text-align: right;
+  border-top: 1px solid rgb(219, 229, 232);
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+#wrapper p.change_link a {
+  display: inline-block;
+  font-weight: bold;
+  background: rgb(247, 248, 241);
+  padding: 2px 6px;
+  color: black;
+  margin-left: 10px;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid rgb(203, 213, 214);
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+#wrapper p.change_link a:hover {
+  color: white;
+  background: black;
+  border: 1px solid rgb(74, 179, 198);
+}
+#wrapper p.change_link a:active {
+  position: relative;
+  top: 1px;
+}
+#loginpage {
+  background-size: cover;
+}
+/** Styling both forms **/
+#register,
+#login {
+  border: 10px auto;
+  margin: 0 auto 0 auto;
+  position: absolute;
+  top: 40%;
+  width: 88%;
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background: white;
+  background-size: cover;
+
+  border: 1px solid rgba(147, 184, 189, 0.8);
+  -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),
+    0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+  -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),
+    0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+  box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),
+    0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+  -webkit-box-shadow: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#register {
+  z-index: 21;
+  opacity: 0;
+}
+
+#login {
+  z-index: 22;
+}
+#toregister:target ~ #wrapper #register,
+#tologin:target ~ #wrapper #login {
+  z-index: 22;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -ms-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+#toregister:target ~ #wrapper #login,
+#tologin:target ~ #wrapper #register {
+  -webkit-animation-name: fadeOutLeft;
+  -moz-animation-name: fadeOutLeft;
+  -ms-animation-name: fadeOutLeft;
+  -o-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+/** the actual animation, credit where due : http://daneden.me/animate/ ***/
+.animate {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+
+  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-fill-mode: both;
+
+  -o-animation-duration: 0.5s;
+  -o-animation-timing-function: ease;
+  -o-animation-fill-mode: both;
+
+  -ms-animation-duration: 0.5s;
+  -ms-animation-timing-function: ease;
+  -ms-animation-fill-mode: both;
+
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+/** yerk some ugly IE fixes 'cause I know someone will ask "why does it look ugly in IE?", no matter how many warnings I will put in the article */
+
+.lt8 #wrapper input {
+  padding: 10px 5px 10px 32px;
+  width: 92%;
+}
+.lt8 #wrapper input[type="checkbox"] {
+  width: 10px;
+  padding: 0;
+}
+.lt8 #wrapper h1 {
+  color: #066a75;
+}
+.lt8 #register {
+  display: none;
+}
+.lt8 p.change_link,
+.ie9 p.change_link {
+  position: absolute;
+  height: 90px;
+  background: transparent;
+}
+
+.uname,
+.youpasswd,
+.youmail {
+  color: black;
+
+  font-weight: bolder;
+}
+ul {
+  margin-left: 40px;
+  display: grid;
+  border: solid 2px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 5px 7px rgba(150, 196, 98, 1);
+  -moz-box-shadow: 0px 0px 5px 7px rgba(150, 196, 98, 1);
+  box-shadow: 0px 0px 5px 7px white;
+
+  list-style: none;
+}
+li:before {
+  content: "\1F47B";
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+li {
+  list-style-image: none;
+}
+
+.animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -moz-transform: translateZ(-20px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateZ(0);
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@-ms-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -ms-transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -ms-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@-ms-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -ms-transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Google Fonts */
+
+/* Global */
+#gamePage {
+  color: rgba(255, 255, 255, 0.75);
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+}
+.aboutus {
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255, 255, 255, 0.75);
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+#HoverContent {
+  display: none;
+  color: white;
+}
+
+#initial:hover + #HoverContent {
+  display: block;
+}
+
+footer {
+  background: white;
+  color: black;
+  text-decoration: bold;
+  bottom: 0;
+  position: fixed;
+  text-decoration: solid;
+
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.css-typing section {
+  font-family: monospace;
+  padding: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.css-typing section:nth-child(1) {
+  width: 52em;
+  color: white;
+
+  animation: type 1s steps(40, end);
+  animation-fill-mode: forwards;
+}
+
+.css-typing section:nth-child(2) {
+  width: 49em;
+  color: white;
+  opacity: 0;
+  animation: type2 3s steps(40, end);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.css-typing section:nth-child(3) {
+  width: 83em;
+  color: white;
+
+  opacity: 0;
+  animation: type3 4s steps(40, end);
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+.css-typing section:nth-child(4) {
+  width: 60em;
+  color: white;
+  opacity: 0;
+
+  animation: type3 2s steps(40, end);
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+
+.css-typing section:nth-child(5) {
+  width: 60em;
+  color: white;
+  opacity: 0;
+
+  animation: type3 2s steps(40, end);
+  animation-delay: 10s;
+
+  animation-fill-mode: forwards;
+}
+
+.css-typing section:nth-child(6) {
+  width: 60em;
+  color: white;
+  opacity: 0;
+
+  animation: type3 2s steps(40, end);
+  animation-delay: 12s;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.gridArea{
+    margin-top: 1%;
+    animation: fadeIn 3s;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas:
+      
+      "leftCol1 leftCol2 leftCol3";
+    grid-gap: 5px;
+    
+  }
+  .gridArea1{
+
+    margin-top: 4%;
+    animation: fadeIn 3s;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40% 40%;
+    grid-template-areas:
+      
+      "leftCol11 leftCol21  ";
+    grid-gap: 5px;
+    
+  }
+  .tgt{
+    margin-top:4%;
+    display: flex;
+justify-content: space-around;
+font-size: 40px;
+font-weight: bolder;
+
+  }
+  .tgt>a{
+    color: white;
+
+font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+
+  }
+.leftCol1{
+width: 300px;
+grid-area: leftCol1
+
+}
+.leftCol2{
+  width: 300px;
+  grid-area: leftCol2;
+
+}
+
+.leftCol11{
+  width: 40%;
+  height: 500px;
+  grid-area: leftCol11;
+  
+  }
+  .leftCol2{
+    width: 300px;
+    grid-area: leftCol21;
+  
+  }
+  
+.midTop {
+  margin-top: 1%;
+  animation: fadeIn 3s;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-rows: 50px 100px 100px 30px;
+  grid-template-areas:
+    "header header header header"
+    "midTop midTop midTop midTop"
+    "  midTop  midTop  midTop  midTop"
+    "leftCol footer footer rightCol";
+  grid-gap: 5px;
+  
+}
+
+.header {
+  margin-top: 0.001%;
+
+  grid-area: header;
+  text-decoration: solid;
+  font-size: 32px;
+  font-family: monospace;
+}
+#whitebord {
+  margin-top: 0.00001%;
+  animation: fadeInLeft 3s;
+  animation: fadeIn 3s;
+  margin-left: 12%;
+  border: solid 2px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 5px 7px rgba(150, 196, 98, 1);
+  -moz-box-shadow: 0px 0px 5px 7px rgba(150, 196, 98, 1);
+  box-shadow: 0px 0px 5px 7px white;
+}
+
+#whitebord12{
+  margin-top: 0.00001%;
+  animation: fadeInLeft 3s;
+  animation: fadeIn 3s;
+  margin-left: 5%;
+  border: solid 2px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 5px 7px rgba(150, 196, 98, 1);
+  -moz-box-shadow: 0px 0px 5px 7px rgba(150, 196, 98, 1);
+  box-shadow: 0px 0px 5px 7px white;
+}
+
+
+#header1 {
+  text-decoration: solid;
+  font-size: 32px;
+  color: white;
+  margin-left: 150px;
+  margin-top: 4%;
+  margin-left: 40%;
+}
+#guesser {
+  margin-left: 90%;
+}
+.leftCol {
+  margin-left: 120px;
+  animation: fadeInLeft 3s;
+
+  margin-top: 0.00001%;
+  grid-area: leftCol;
+  border: solid 2px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 5px 7px rgba(150, 196, 98, 1);
+  -moz-box-shadow: 0px 0px 5px 7px rgba(150, 196, 98, 1);
+  box-shadow: 0px 0px 5px 7px white;
+  float: left;
+}
+
+.rightCol {
+  margin-top: 1px;
+  animation: fadeInLeft 3s;
+
+  margin-left: 480px;
+  grid-area: rightCol;
+  border: solid 2px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 5px 7px rgba(150, 196, 98, 1);
+  -moz-box-shadow: 0px 0px 5px 7px rgba(150, 196, 98, 1);
+  box-shadow: 0px 0px 5px 7px white;
+  float: left;
+}
+
+.midTop {
+  grid-area: midTop;
+}
+
+.midBottom {
+  grid-area: midBottom;
+}
+
+.footer {
+  margin-top: 60px;
+  grid-area: footer;
+  text-decoration: solid;
+  font-size: 32px;
+  font-family: monospace;
+}

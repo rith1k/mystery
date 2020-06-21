@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Report</title>
+    <style>
+    hr{
+        size:10px;
+    }
+    #logo{
+        margin-top: 3%;   
+     margin-left: 40%;   
+    }
+    #intro{
+        font-size: 28px;
+        padding: 20px;
+    }
+    body{
+        border: solid 3px black;
+        border-radius: 8px;
+    }
+    #contents{
+        font-size: 20px;
+        margin-left:10px;
+    }h3{
+font-size: 20px;}
+p{
+    font-size: 20px;
+
+    }
+    table.greyGridTable {
+  border: 8px solid #000000;
+  background-color: #EEEEEE;
+  width: 80%;
+  height: 300px;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.greyGridTable td, table.greyGridTable th {
+  border: 5px solid #FFFFFF;
+  padding: 3px 4px;
+}
+table.greyGridTable tbody td {
+  font-size: 20px;
+}
+table.greyGridTable td:nth-child(even) {
+  background: #EBEBEB;
+}
+table.greyGridTable thead {
+  background: #FFFFFF;
+  border-bottom: 4px solid #333333;
+}
+table.greyGridTable thead th {
+  font-size: 22spx;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  border-left: 0px solid #333333;
+}
+table.greyGridTable thead th:first-child {
+  border-left: none;
+}
+
+table.greyGridTable tfoot td {
+  font-size: 14px;
+}
+    #loginContent{
+        float: left;
+        margin-left: 30px;
+
+    }
+    #loginData{
+        clear: both;
+    }
+    </style>
+</head>
+<body>
+    <img id="logo"align="center" src="images/logo.png" alt=""> <br><br>
+
+<div id="intro" align="center" > <b><p> Name: Rithik Makhija  </p>
+        
+        <p>MISIS: M00693690</p>
+
+        <p>Website Report</p>
+        </b></div>
+        <hr>
+
+        <div class="page-layout">
+                <center><h1>My Game Website: Hidden Object</h1>
+<video src="Website video.mp4" controls></video><p>The game of my selection is a hidden object game . The motive of the game is for having a list of items blended with a background image, <br>and to allow a player to guess all the items before the time runs out, and get the highest score possible. </p><hr>
+
+<h1>Local Storage</h1>
+<video src="Local Storage.mp4" controls></video><p>The entire game uses the local storage as its main form of storage. All registered users have their information stored in local storage, and the logged-in details are stored in the session storage.  <br>
+The local storage stores the highest score for each user, for each level played and keeps the default score as undefined.  </p><hr>
+</center>
+</div>
+<div id="contents">  <h1>Game functions:</h1> 
+<h2>Game Levels:</h2>
+The game has 2 levels. Each level has 60 seconds of time, and the user has to guess the maximum amount of items before the time runs out. Each level has a capped amount of lives, 5 for level 1, and 3 for level 2. The game ends if the user loses all his lives.
+<br><img src="../Website/images/gamel.jpg" width="60%" style="margin:30px;" alt="">
+<h2>Objects and arrays used:</h2>
+The whole game, and the website uses a bunch of objects and arrays which help in inserting and retrieving information from and to the local storage. 
+<br><h3>Example object:</h3>
+<br><img src="../Website/images/objects.jpg" width="60%" style="margin:30px;" alt="">
+<br><h3>Example Array:</h3> 
+<br><img src="../Website/images/array.jpg" width="60%" style="margin:30px;" alt="">
+<h2>Advanced gameplay:</h2>
+<h3>Function check answer
+</h3>
+This function runs every time a player makes a guess and the right answer increases the score of the user and the wrong guess decreases a life for the user's current game.
+<br><img src="../Website/images/checkAnswer.jpg" width="30%" style="margin:30px;" alt="">
+
+<h3>Function move () :</h3>
+Every time the player guesses the right answer, the function move is initiated and an animation is applied and the item moves to its designated spot in the item bar.
+<br><img src="../Website/images/move.jpg" width="30%" style="margin:30px;" alt="">
+
+<h3>Countdown timer function:</h3>
+Each level has a capped timer of 60 seconds. Either the user has to guess the answers or the time runs out. The timer resets if the user runs out of time, or if he loses all of his lives.
+<br><img src="../Website/images/checkAnswer.jpg" width="30%" style="margin:30px;" alt="">
+
+<h2>Animations and graphics used: </h2>
+The game has several graphic elements,each level has different objects blended in with the background images, and also a panel of the same objects but with filtered brightness. <br>Animation  
+have been applied all through the website, but in the game, animations are brought in when a player makes a guess.
+<hr>
+
+<h1>User Account</h1>
+ 
+<h2> Registration 
+</h2>
+The register function takes in all the values inputted by the user in the username, password, password confirm and email text fields, and verifies if the password and password_confirm match, and subsequently, <br>
+registers the user into the database. 
+
+<br><img src="../Website/images/storeUser.jpg" width="40%" style="margin:30px;" alt="">
+ <h2>Login</h2>
+The login function essentially checks if the username and the password entered in the form matches with the registered user's data. If the username doesn't match, the user is prompted to create an account.  
+ <br><img src="../Website/images/storeUser.jpg" width="40%" style="margin:30px;" alt="">
+
+ <h2>
+  Logout 
+
+</h2> 
+The logout function essentially checks if the user is logged in or not, if the user is logged in,the register and login forms disappear, and a logout button is shown if in case the user wants to log out. <br>
+The logout button only shows up if a user has successfully registered, and logged in with the correct information. <br><img src="../Website/images/logout.jpg" width="40%" style="margin:30px;" alt="">
+<hr>
+<h1>Leader Board</h1> 
+ 
+Every time a user plays the game, his new score is checked with his previous highscore, and if its higher, the score gets updated. But if the user has no previous score, his first score is taken as his score and displayed on the leaderboard. <br><img src="../Website/images/leaderboardup.jpg" width="40%" style="margin:30px;" alt="">
+<br>The leaderboard table creates a new row every time a new user plays any of the 2 levels. The leaderboard only stores the values of registered users.
+
+<br><img src="../Website/images/leaderboardup1.jpg" width="40%" style="margin:30px;" alt="">
+<h2>Sorting</h2>
+The table can be sorted by any column the user wishes for, but by default, the table is automatically sorted from the highest to the lowest of scores for level 1. The sorting algorithm is a 3rd party library inherited in the main program. 
+<br><img src="../Website/images/sorting.jpg" width="40%" style="margin:30px;" alt="">
+<hr>
+<h2>Third Party library
+</h2>
+The Third library used in this website was a sorting library called sortable.js, that specifically helps in sorting a table by any column, in ascending or descending order.<br>
+Link for the third-party library: <a href="https://kryogenix.org/code/browser/sorttable/">https://kryogenix.org/code/browser/sorttable/</a> 
+<hr>
+</div>
+     
+
+
+</body>
+</html>
