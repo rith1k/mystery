@@ -1,6 +1,6 @@
 <?php
     //Include the PHP functions to be used on the page 
-    include('common.php'); 
+    include('php/common.php'); 
     outputHeader("Home");	
     //Output header and navigation
     outputBannerNavigation("Home");
@@ -9,10 +9,6 @@
 <!-- Contents of the page -->
 
 <body class="indexb">
-
-
-
-
         <h1 id="initial">MYSTERY.</h1>
         <p id="HoverContent" align="center"><b> Where is it?
             What is it?
