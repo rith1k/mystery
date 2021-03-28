@@ -1,30 +1,27 @@
-<?php
-    //Include the PHP functions to be used on the page 
-    include('php/common.php'); 
-    outputHeader("Home");	
-    //Output header and navigation
-    outputBannerNavigation("Home");
-?>
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Contents of the page -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/tab-icon.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
 
-<body class="indexb">
-        <h1 id="initial">MYSTERY.</h1>
-        <p id="HoverContent" align="center"><b> Where is it?
-            What is it?
-            Find it how you will. No matter the cost.
-            </b></p>
+<body id="gamePage">
+    <!-- Contents of the page -->
+    <p id="header1"><b> Mysterious Hidden Object </b></p>
 
-    <div id="skeleton">
-        <div class="move">
-            <img src="../images/skeleton.gif" alt=""> </div>
-    </div>
+    <div class="gridArea1">
+        <a href="../php/level1.html"> <img id="whitebord12" src="../images/level1.jpg" class="leftCol11" alt=""> </a>
+        <a href="../php/level2.html"> <img id="whitebord12" src="../images/level2.gif" class="leftCol11" alt=""></a>
 
     </div>
 
-
-
-    <?php
-        //Output the footer
-        outputFooter();
-    ?>
+    <div class="tgt">
+        <a href="../php/level1.html">Level 1</a>
+        <a href="../php/level2.html" style="margin-right:80px;">Level 2</a>
+    </div>
+    <script>
+    </script>
